@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bright-orange: #e38826;
+    --Dark-cyan: #006970;
+    --Very-dark-cyan: #004241;
+    --tranparent-white: rgba(255, 255, 255, 0.75);
+    --Very-light-gray: #f2f2f2;
+
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    margin-bottom: 1.6rem;
+    color: var(--tranparent-white);
+}
+
+section {
+    padding: 3rem;
+    line-height: 25px;
+}
+
+section img {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    margin-bottom: 1.6rem;
+    margin-bottom: 1.6rem;
+}
+
+section h2 {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 40px;
+}
+
+body {
+    padding: 1rem;
+}
+
+.sedans {
+    background: var(--bright-orange);
+    border-radius: 8px 8px 0 0;
+}
+
+.suvs {
+    background: var(--Dark-cyan);
+}
+
+.luxury {
+    background: var(--Very-dark-cyan);
+    border-radius: 0 0 8px 8px;
+}
+
+section button {
+    font-size: 15px;
+    padding: 12px 32px;
+    border-radius: 25px;
+    border: 2px solid var(--Very-light-gray);
+    cursor: pointer;    
+    transition-duration: 0.4s;
+
+}
+
+    section button:hover{
+        cursor: pointer;
+        color: var(--Very-light-gray);
+        background: transparent;
+    }
+
+.sedans button {
+    color: var(--bright-orange);
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+
+.suvs button {
+    color: var(--Dark-cyan);
+    font-family: 'Lexend Deca', sans-serif;
+
+}
+
+
+.luxury button {
+    color: var(--Very-dark-cyan);
+    font-family: 'Lexend Deca', sans-serif;
+
+}
+
+
+@media(min-width:880px) {
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    main {
+        display: flex;
+        max-width: 920px;
+    }
+
+    .sedans {
+        border-radius: 8px 0 0 8px;
+    }
+    .luxury{
+        border-radius: 0 8px 8px 0;
+    }
+    
+}
+
